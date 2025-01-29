@@ -112,13 +112,75 @@ h2{
 #mission{
     background-color: #D1F9E7;
 }
+#photoMission{
+    justify-content: flex-start;
+    margin-top: 25px;
+    margin-left: 140px;
+    
+}
 #fondBlanc{
     background-color: white;
     width: 40%;
-    padding: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 55px;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-top: 25px;
+    margin-right: 165px;
+    
 }
 #fondBlanc p{
     color: #727781;
+}
+#diaporama{
+    padding-left: 25%;
+}
+#quizz{
+    background-color: #EDFEF6;
+}
+.flex2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.quizz{
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.07);
+    margin-bottom: 20px;
+}
+#reponse{
+    background-color: #F3F4F6;
+    border-radius: 5%;
+    width: 50%;
+    padding: 20px;
+}
+.flex3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.center{
+    text-align: center;
+    justify-self: center;
+}
+#temoins{
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.07);
+    padding-bottom: 20px;
+    border-radius: 5%;
+}
+.footer{
+    background-color: #1F2937;
+    color: white;
+    padding: 20px;
+    justify-content: space-evenly;
 }
