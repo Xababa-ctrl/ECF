@@ -29,19 +29,19 @@
             <br>
             <br>
         <section id="boxDons">
-            <div id="box">
+            <div id="box1">
                 <h2>10€</h2>
                 <br>
                 <p>permet de nourrir 5 animaux pendant une journée</p>
                 <br>
             </div>
-            <div id="box">
+            <div id="box2">
                 <h2>20€</h2>
                 <br>
                 <p>permet d'héberger un animal sauvage pendant une nuit</p>
                 <br>
             </div>
-            <div id="box">
+            <div id="box3">
                 <h2>50€</h2>
                 <br>
                 <p>permet de financer les soins vétérinaires complets pour un animal</p>
@@ -84,25 +84,25 @@
         <section>
             <table id="diaporama">
                 <thead>
-                    <th colspan="3" class="container"><img id="grandePhoto" width="880" src="images/Luna.jpg" alt="Photo de Luna et son histoire">
+                    <th colspan="3" class="container"><img id="grandePhoto" width="880" src="images/Luna.jpg" alt="Luna">
                         <div class="text2">
-                            <h3 class="texteGros">Luna</h3>
+                            <h3 id="nomAnimal" class="texteGros">Luna</h3>
                             <br>
-                            <p>Trouvée dans la rue avec une patte cassée, Luna a été soigné et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.</p>
+                            <p id="histoireAnimal">Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.</p>
                             <br>
-                            <span>Janvier 2024</span>
+                            <span id="dateHistoire">Janvier 2024</span>
                         </div></th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="container"><img id="photo1"  width="290" src="images/Luna 2.png" alt="Luna">
-                        <div class="text3">Luna</div>
+                        <td class="container"><img onclick="img('images/Luna 2.png')" class="bord" id="photo1"  width="290" src="images/Luna 2.png" alt="Luna" tabindex="0">
+                        <div id="nomMini" class="text3">Luna</div>
                         </td>
-                        <td class="container"><img id="photo2"  width="290" src="images/Oscar.jpg" alt="Oscar">
-                        <div class="text3">Oscar</div>
+                        <td class="container"><img onclick="img('images/Oscar.jpg')" class="bord" id="photo2"  width="290" src="images/Oscar.jpg" alt="Oscar" tabindex="0">
+                        <div id="nomMini" class="text3">Oscar</div>
                         </td>
-                        <td class="container"><img id="photo3"  width="290" src="images/Max.jpg" alt="Max">
-                        <div class="text3">Max</div>
+                        <td class="container"><img onclick="img('images/Max.jpg')" class="bord" id="photo3"  width="290" src="images/Max.jpg" alt="Max" tabindex="0">
+                        <div id="nomMini" class="text3">Max</div>
                         </td>
                     </tr>    
                 </tbody>
