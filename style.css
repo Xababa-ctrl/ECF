@@ -270,5 +270,12 @@ label{
     align-items: center;
 }
 @media (max-width : 768px) {
+    header .flex{
+        flex-direction: column;
+    }
+    .container .text{
+        font-size: clamp (24px, 2em, 48px);
+    }
+    
     
 }
