@@ -269,6 +269,11 @@ label{
     justify-content: center;
     align-items: center;
 }
+.error{
+    color: red;
+    font-size: 0.9em;
+}
+
 @media (max-width : 768px) {
     header .flex{
         flex-direction: column;
