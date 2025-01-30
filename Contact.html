@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quatre Pattes - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="flex header">
@@ -11,15 +15,50 @@
         <nav>
             <a href="Accueil.html">Accueil</a>
             <a href="Contact.html">Contact</a>
-            <button><img src="images/Icônes/coeur.png" alt="coeur">Faire un don</button>
+            <button type="button" id="btn"><img id="coeur" src="images/Icônes/coeur.png" alt="coeur">&nbsp;Faire un don</button>
 
         </nav>
     </header>
     <main>
-
+        <br>
+        <br>
+        <h2><b>Contactez-nous</b></h2>
+        <br>
+        <br>
+        <section id="form">
+        <form id="myForm" onsubmit="return validerForm()">
+            <label for="username">Nom</label><br>
+            <input type="text" id="username"><br>
+            <div id="error_username" class="error"></div><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+            <div id="error_email"></div><br>
+            <label for="sujet">Sujet</label><br>
+            <select name="sujet" id="sujet">
+                <option value="Question sur les dons">Question sur les dons</option>
+                <option value="Partenariat">Partenariat</option>
+            </select><br>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message"></textarea>
+            <br>
+            <button id="btnsubmit" type="submit"><img src="images/Icônes/send.png" alt="envoyer">&nbsp;<h3>Envoyer</h3></button>
+        </form>
+    </section>
     </main>
-    <footer>
-
+    <footer class="footer flex">
+        <div>
+            <h3>Quatre Pattes</h3>
+            <br>
+            <p>Ensemble, protégeons les animaux et donnons-leur <br>une vie meilleure.</p>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <br>
+            <p class="contact"><img src="images/Icônes/contact.png" alt="">&nbsp;contact@quatrepattes.org</p>
+        </div>
+        <div>
+            <h3>Suivez nous</h3>
+        </div>
     </footer>
     
 </body>

@@ -26,10 +26,9 @@ nav a{
 #btn{
     background-color: #DB2727;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     border: none;
-    border-radius: 5%;
+    border-radius: 8px;
     box-shadow: none;
 }
 #textButton{
@@ -72,7 +71,7 @@ h2{
     display: flexbox;
     text-align: center;
     border: #E6E7E9 4px solid;
-    border-radius: 5%;
+    border-radius: 8px;
     padding-bottom: 20px;
 }
 #boxDons{
@@ -94,20 +93,22 @@ h2{
     padding: 10px;
     background-color: #F3F4F6;
     border: none;
-    border-radius: 5%;
+    border-radius: 8px;
     font-size: 14px;
 }
 #btn2{
     background-color: #DB2727;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     border: none;
-    border-radius: 5%;
+    border-radius: 8px;
     box-shadow: none;
     width: 60%;
     font-size: 16px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #mission{
     background-color: #D1F9E7;
@@ -124,8 +125,8 @@ h2{
     padding-left: 50px;
     padding-right: 20px;
     padding-bottom: 55px;
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 5%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     justify-content: flex-start;
     align-self: flex-start;
     margin-top: 25px;
@@ -136,7 +137,7 @@ h2{
     color: #727781;
 }
 #diaporama{
-    padding-left: 25%;
+    padding-left: 22%;
 }
 #quizz{
     background-color: #EDFEF6;
@@ -149,25 +150,66 @@ h2{
     gap: 20px;
 }
 .quizz{
-    width: 50%;
+    width: 70%;
     background-color: white;
-    text-align: center;
+    text-align: left;
     padding: 15px;
-    border-radius: 5%;
+    border-radius: 8px;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.07);
     margin-bottom: 20px;
 }
 #reponse{
     background-color: #F3F4F6;
-    border-radius: 5%;
+    border-radius: 8px;
     width: 50%;
     padding: 20px;
+    gap: 20px;
 }
 .flex3{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+}
+.flex4{
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.container .text2 {
+    background: none;
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 60%;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    padding: 15px;
+}
+.texteGros{
+    font-size: 20px;
+}
+span{
+    font-size: smaller;
+    font-weight: 200;
+}
+.container .text3 {
+    background: none;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: white;
+    width: 100%;
+    font-size: 20px;
 }
 .center{
     text-align: center;
@@ -176,11 +218,57 @@ h2{
 #temoins{
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.07);
     padding-bottom: 20px;
-    border-radius: 5%;
+    border-radius: 8px;
 }
 .footer{
     background-color: #1F2937;
     color: white;
     padding: 20px;
     justify-content: space-evenly;
+}
+#coeur{
+    vertical-align: middle;
+}
+#form{
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.07);
+    padding-bottom: 20px;
+    border-radius: 8px;
+    margin: 10%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input, select, textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    
+}
+label{
+    color: #727781;
+}
+#btnsubmit{
+    color: white;
+    background-color: #08956A;
+    width: 70%;
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width : 768px) {
+    
 }
