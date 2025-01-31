@@ -29,33 +29,33 @@
             <br>
             <br>
         <section id="boxDons">
-            <div id="box1">
+            <div class="box" id="montant10" onclick="selectionner('montant','10')">
                 <h2>10€</h2>
                 <br>
                 <p>permet de nourrir 5 animaux pendant une journée</p>
                 <br>
             </div>
-            <div id="box2">
+            <div class="box" id="montant20" onclick="selectionner('montant','20')">
                 <h2>20€</h2>
                 <br>
                 <p>permet d'héberger un animal sauvage pendant une nuit</p>
                 <br>
             </div>
-            <div id="box3">
+            <div class="box" id="montant50" onclick="selectionner('montant','50')">
                 <h2>50€</h2>
                 <br>
                 <p>permet de financer les soins vétérinaires complets pour un animal</p>
             </div>
         </section>
         <br>
-        <section id="btnDons">
-            <button class="btnDons">Une fois</button>
-            <button class="btnDons">Mensuel</button>
-            <button class="btnDons">Annuel</button>
+        <section class="btnDons">
+            <button id="periodeUneFois" class="btnDons" onclick="selectionner('periode', 'une fois')">Une fois</button>
+            <button id="periodeMensuel" class="btnDons" onclick="selectionner('periode', 'mensuel')">Par mois</button>
+            <button id="periodeAnnuel" class="btnDons" onclick="selectionner('periode', 'annuel')">Annuel</button>
         </section>
         <br>
-        <div id="btnDons" class="flex">
-            <button id="btn2"><img src="images/Icônes/coeur.png" alt="coeur">&nbsp;Faire un don de 20€ par mois</button>
+        <div class="btnDons" class="flex">
+            <button class="btn2"><img src="images/Icônes/coeur.png" alt="coeur"><p id="donBouton">&nbsp;Faire un don de 20€ par mois</p></button>
         </div>
         <br>
         <br>
@@ -119,24 +119,24 @@
                     <h3>Les associations gardent la majorité des dons pour leur fonctionnement</h3>
                     <br>
                     <div class="flex">
-                        <div id="reponse"><p>Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement</p></div>
-                        <div id="reponse"><p>Faux</p></div>
+                        <div id="reponse" class="option"><p>Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement</p></div>
+                        <div id="reponse" class="option"><p>Faux</p></div>
                     </div>
                 </div>
                 <div class="quizz">
                     <h3>Les refuges ne prennent que les animaux en bonne santé</h3>
                     <br>
                     <div class="flex">
-                        <div id="reponse"><p>Vrai, ils refusent les animaux malades car c'est trop coûteux</p></div>
-                        <div id="reponse"><p>Faux</p></div>
+                        <div id="reponse" class="option"><p>Vrai, ils refusent les animaux malades car c'est trop coûteux</p></div>
+                        <div id="reponse" class="option"><p>Faux</p></div>
                     </div>    
                 </div>
                 <div class="quizz">
                     <h3>Les associations ont trop de moyens grâce aux dons</h3>
                     <br>
                     <div class="flex">
-                        <div id="reponse"><p>Vrai, elles reçoivent beaucoup d'argent des donateurs</p></div>
-                        <div id="reponse"><p>Faux</p></div>
+                        <div id="reponse" class="option"><p>Vrai, elles reçoivent beaucoup d'argent des donateurs</p></div>
+                        <div id="reponse" class="option"><p>Faux</p></div>
                     </div>
                 </div>
             </div>

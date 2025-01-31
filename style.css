@@ -65,7 +65,7 @@ h2{
     text-align: center;
     padding-top: 50px;
 }
-#box1{
+.box{
     width: 18%;
     height: 10%;
     display: flexbox;
@@ -74,42 +74,23 @@ h2{
     border-radius: 8px;
     padding-bottom: 20px;
 }
-#box2{
-    width: 18%;
-    height: 10%;
-    display: flexbox;
-    text-align: center;
-    border: #E6E7E9 4px solid;
-    border-radius: 8px;
-    padding-bottom: 20px;
-}
-#box3{
-    width: 18%;
-    height: 10%;
-    display: flexbox;
-    text-align: center;
-    border: #E6E7E9 4px solid;
-    border-radius: 8px;
-    padding-bottom: 20px;
-}
+
 #boxDons{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 50px;
 }
-#box p{
+.box p{
     color: #727781;
 }
-#btnDons{
+
+.btnDons{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 50px;
-}
-.btnDons{
     padding: 10px;
-    background-color: #F3F4F6;
     border: none;
     border-radius: 8px;
     font-size: 14px;
@@ -118,7 +99,7 @@ h2{
     border : 4px solid #33B483;
     border-radius : 12px;
 }
-#btn2{
+.btn2{
     background-color: #DB2727;
     color: white;
     padding: 10px;
@@ -295,6 +276,26 @@ label{
     color: red;
     font-size: 0.9em;
 }
+
+.quizz .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; /* Espacement entre les options */
+    padding: 10px;
+    width: 100%; /* Ajuster la largeur des divs */
+    box-sizing: border-box;
+  }
+  
+  .quizz .option p {
+    margin: 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+  }
+  
 
 @media (max-width : 768px) {
     header .flex{

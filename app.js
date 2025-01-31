@@ -53,3 +53,53 @@ function img(source){
         document.getElementById("dateHistoire").innerHTML = "Février 2024"
     }
 }
+
+
+    let montantSelectionne = "10";
+    let periodeSelectionnee = "une fois";
+
+    function selectionner(type, valeur) {
+    
+    if (type === "montant") {
+      montantSelectionne = valeur;
+      
+      
+      document.getElementById("montant10").style.backgroundColor = "";
+      document.getElementById("montant20").style.backgroundColor = "";
+      document.getElementById("montant50").style.backgroundColor = "";
+
+      
+      if (valeur === "10") document.getElementById("montant10").style.backgroundColor = "#EDFEF6";
+      else if (valeur === "20") document.getElementById("montant20").style.backgroundColor = "#EDFEF6";
+      else if (valeur === "50") document.getElementById("montant50").style.backgroundColor = "#EDFEF6";
+    }
+
+    
+    else if (type === "periode") {
+      periodeSelectionnee = valeur;
+
+      
+      document.getElementById("periodeUneFois").style.backgroundColor = "";
+      document.getElementById("periodeMensuel").style.backgroundColor = "";
+      document.getElementById("periodeAnnuel").style.backgroundColor = "";
+
+      
+      if (valeur === "une fois") 
+        document.getElementById("periodeUneFois").style.backgroundColor = "#0CB981";
+      else if (valeur === "mensuel") 
+        document.getElementById("periodeMensuel").style.backgroundColor = "#0CB981";
+      else if (valeur === "annuel") 
+        document.getElementById("periodeAnnuel").style.backgroundColor = "#0CB981";
+    }
+
+    
+    mettreAJourBouton();
+  }
+
+  function mettreAJourBouton() {
+    document.getElementById("donBouton").innerHTML = `Faire un don de ${montantSelectionne}€/${periodeSelectionnee}`;
+  }
+
+ 
+  
+  
