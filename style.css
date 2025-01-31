@@ -161,7 +161,7 @@ h2{
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.07);
     margin-bottom: 20px;
 }
-#reponse{
+.reponse{
     background-color: #F3F4F6;
     border-radius: 8px;
     width: 50%;

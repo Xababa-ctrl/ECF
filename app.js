@@ -54,7 +54,7 @@ function img(source){
     }
 }
 
-
+// création de fonction pour la partie dons
     let montantSelectionne = "10";
     let periodeSelectionnee = "une fois";
 
@@ -97,9 +97,44 @@ function img(source){
   }
 
   function mettreAJourBouton() {
-    document.getElementById("donBouton").innerHTML = `Faire un don de ${montantSelectionne}€/${periodeSelectionnee}`;
+    document.getElementById("donBouton").innerHTML = `Faire un don de ${montantSelectionne}€/${periodeSelectionnee}`;//essai de backtiques
   }
 
- 
+// création de fonction pour le quizz
+function afficherReponse(questionId, reponseUtilisateur) {
+  const question = document.getElementById(questionId);
+
+  
+  if (questionId === "question1" && reponseUtilisateur === "Faux") {
+      document.getElementById("reponse1").innerHTML = "<div><img src='images/Icônes/Faux.png' alt='Faux'><p style='background-color: #FFE3E2; padding: 10px; border-radius: 5px;'>Faux ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.</p></div>";
+      document.getElementById("rep1").setAttribute("hidden")
+      document.getElementById("rep2").setAttribute("hidden")
+  
+  } else if (questionId === "question2" && reponseUtilisateur === "Faux") {
+      document.getElementById("reponse2").innerHTML = "<div><img src='images/Icônes/Faux.png' alt='Faux'><p style='background-color: #FFE3E2; padding: 10px; border-radius: 5px;'>Faux ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !</p></div>";
+      document.getElementById("rep3").setAttribute("hidden")
+      document.getElementById("rep4").setAttribute("hidden")
+  
+  } else if (questionId === "question3" && reponseUtilisateur === "Faux") {
+      document.getElementById("reponse3").innerHTML = "<div><img src='images/Icônes/Vrai.png' alt='Vrai'><p style='background-color: #D1F9E7; padding: 10px; border-radius: 5px;'>Correct ! Les associations n’ont jamais trop de moyens, chaque don fait une réelle différence pour les animaux.</p></div>";
+      document.getElementById("rep5").setAttribute("hidden")
+      document.getElementById("rep6").setAttribute("hidden")
+  
+    } else if (questionId === "question1" && reponseUtilisateur.includes("Vrai")){
+      document.getElementById("reponse1").innerHTML = "<div><img src='images/Icônes/Vrai.png' alt='Faux'><p style='background-color: #D1F9E7;   padding: 10px; border-radius: 5px;'>Correct ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux.    Seuls 15% servent aux frais de fonctionnement essentiels.</p></div>"
+      document.getElementById("rep1").setAttribute("hidden")
+      document.getElementById("rep2").setAttribute("hidden")
+  } else if (questionId === "question2" && reponseUtilisateur.includes("Vrai")){
+      document.getElementById("reponse2").innerHTML = "<div><img src='images/Icônes/Vrai.png' alt='Vrai'><p style='background-color: #D1F9E7; padding: 10px; border-radius: 5px;'>Correct ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !</p></div>";
+      document.getElementById("rep3").setAttribute("hidden")
+      document.getElementById("rep4").setAttribute("hidden")
+  } else {
+      document.getElementById("reponse3").innerHTML = "<div><img src='images/Icônes/Faux.png' alt='Faux'><p style='background-color: #FFE3E2; padding: 10px; border-radius: 5px;'>Faux ! Les associations n’ont jamais trop de moyens, chaque don fait une réelle différence pour les animaux.</p></div>";
+      document.getElementById("rep5").setAttribute("hidden")
+      document.getElementById("rep6").setAttribute("hidden")
+  }
+
+}
+
   
   

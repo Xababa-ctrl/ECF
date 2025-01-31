@@ -115,28 +115,28 @@
             <br>
             <br>
             <div class="flex2">
-                <div class="quizz">
+                <div class="quizz" id="question1">
                     <h3>Les associations gardent la majorité des dons pour leur fonctionnement</h3>
                     <br>
-                    <div class="flex">
-                        <div id="reponse" class="option"><p>Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement</p></div>
-                        <div id="reponse" class="option"><p>Faux</p></div>
+                    <div class="flex" id="reponse1">
+                        <div class="reponse" id="rep1" onclick="afficherReponse('question1', 'Vrai')"><p>Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement</p></div>
+                        <div class="reponse" id="rep2" onclick="afficherReponse('question1', 'Faux')"><p>Faux</p></div>
                     </div>
                 </div>
-                <div class="quizz">
+                <div class="quizz" id="question2">
                     <h3>Les refuges ne prennent que les animaux en bonne santé</h3>
                     <br>
-                    <div class="flex">
-                        <div id="reponse" class="option"><p>Vrai, ils refusent les animaux malades car c'est trop coûteux</p></div>
-                        <div id="reponse" class="option"><p>Faux</p></div>
+                    <div class="flex" id="reponse2">
+                        <div class="reponse" id="rep3" onclick="afficherReponse('question2' , 'Vrai')"><p>Vrai, ils refusent les animaux malades car c'est trop coûteux</p></div>
+                        <div class="reponse" id="rep4" onclick="afficherReponse('question2', 'Faux')"><p>Faux</p></div>
                     </div>    
                 </div>
-                <div class="quizz">
+                <div class="quizz" id="question3">
                     <h3>Les associations ont trop de moyens grâce aux dons</h3>
                     <br>
-                    <div class="flex">
-                        <div id="reponse" class="option"><p>Vrai, elles reçoivent beaucoup d'argent des donateurs</p></div>
-                        <div id="reponse" class="option"><p>Faux</p></div>
+                    <div class="flex" id="reponse3">
+                        <div class="reponse" id="rep5" onclick="afficherReponse('question3' , 'Vrai')"><p>Vrai, elles reçoivent beaucoup d'argent des donateurs</p></div>
+                        <div class="reponse" id="rep6" onclick="afficherReponse('question3', 'Faux')"><p>Faux</p></div>
                     </div>
                 </div>
             </div>
