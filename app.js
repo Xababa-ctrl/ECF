@@ -68,10 +68,22 @@ function img(source){
       document.getElementById("montant20").style.backgroundColor = "";
       document.getElementById("montant50").style.backgroundColor = "";
 
+      document.getElementById("montant10").style.border = "";
+      document.getElementById("montant20").style.border = "";
+      document.getElementById("montant50").style.border = "";
+
       
-      if (valeur === "10") document.getElementById("montant10").style.backgroundColor = "#EDFEF6";
-      else if (valeur === "20") document.getElementById("montant20").style.backgroundColor = "#EDFEF6";
-      else if (valeur === "50") document.getElementById("montant50").style.backgroundColor = "#EDFEF6";
+      if (valeur === "10"){ 
+        document.getElementById("montant10").style.backgroundColor = "#EDFEF6";
+        document.getElementById("montant10").style.border = "4px solid #33B483";
+      }else if (valeur === "20"){ 
+        document.getElementById("montant20").style.backgroundColor = "#EDFEF6";
+        document.getElementById("montant20").style.border = "4px solid #33B483";
+      }else if (valeur === "50"){ 
+        document.getElementById("montant50").style.backgroundColor = "#EDFEF6";
+        document.getElementById("montant50").style.border = "4px solid #33B483";
+
+      }
     }
 
     
@@ -83,53 +95,63 @@ function img(source){
       document.getElementById("periodeMensuel").style.backgroundColor = "";
       document.getElementById("periodeAnnuel").style.backgroundColor = "";
 
+      document.getElementById("periodeUneFois").style.color = "";
+      document.getElementById("periodeMensuel").style.color = "";
+      document.getElementById("periodeAnnuel").style.color = "";
+
       
-      if (valeur === "une fois") 
+      if (valeur === "une fois") {
         document.getElementById("periodeUneFois").style.backgroundColor = "#0CB981";
-      else if (valeur === "mensuel") 
+        document.getElementById("periodeUneFois").style.color = "#FFFFFF";
+      }else if (valeur === "mensuel"){
         document.getElementById("periodeMensuel").style.backgroundColor = "#0CB981";
-      else if (valeur === "annuel") 
+        document.getElementById("periodeMensuel").style.color = "#FFFFFF";
+      }else if (valeur === "annuel"){
         document.getElementById("periodeAnnuel").style.backgroundColor = "#0CB981";
-    }
+        document.getElementById("periodeAnnuel").style.color = "#FFFFFF";
+      }
+      }
 
-    
-    mettreAJourBouton();
+      mettreAJourBouton();
   }
 
-  function mettreAJourBouton() {
-    document.getElementById("donBouton").innerHTML = `Faire un don de ${montantSelectionne}€/${periodeSelectionnee}`;//essai de backtiques
+      function mettreAJourBouton() {
+        document.getElementById("donBouton").innerHTML = `Faire un don de ${montantSelectionne}€/${periodeSelectionnee}`;//essai de backtiques
   }
 
+      function messageDon(){
+        alert("Merci pour votre don !")
+      }
 // création de fonction pour le quizz
 function afficherReponse(questionId, reponseUtilisateur) {
   const question = document.getElementById(questionId);
 
   
   if (questionId === "question1" && reponseUtilisateur === "Faux") {
-      document.getElementById("reponse1").innerHTML = "<div><img src='images/Icônes/Faux.png' alt='Faux'><p style='background-color: #FFE3E2; padding: 10px; border-radius: 5px;'>Faux ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.</p></div>";
+      document.getElementById("reponse1").innerHTML = "<div><p style='background-color: #FFE3E2; padding: 10px; border-radius: 5px;'><img src='images/Icônes/Faux.png' alt='Faux'>Faux ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.</p></div>";
       document.getElementById("rep1").setAttribute("hidden")
       document.getElementById("rep2").setAttribute("hidden")
   
   } else if (questionId === "question2" && reponseUtilisateur === "Faux") {
-      document.getElementById("reponse2").innerHTML = "<div><img src='images/Icônes/Faux.png' alt='Faux'><p style='background-color: #FFE3E2; padding: 10px; border-radius: 5px;'>Faux ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !</p></div>";
+      document.getElementById("reponse2").innerHTML = "<div><p style='background-color: #FFE3E2; padding: 10px; border-radius: 5px;'><img src='images/Icônes/Faux.png' alt='Faux'>Faux ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !</p></div>";
       document.getElementById("rep3").setAttribute("hidden")
       document.getElementById("rep4").setAttribute("hidden")
   
   } else if (questionId === "question3" && reponseUtilisateur === "Faux") {
-      document.getElementById("reponse3").innerHTML = "<div><img src='images/Icônes/Vrai.png' alt='Vrai'><p style='background-color: #D1F9E7; padding: 10px; border-radius: 5px;'>Correct ! Les associations n’ont jamais trop de moyens, chaque don fait une réelle différence pour les animaux.</p></div>";
+      document.getElementById("reponse3").innerHTML = "<div><p style='background-color: #D1F9E7; padding: 10px; border-radius: 5px;'><img src='images/Icônes/Vrai.png' alt='Vrai'>Correct ! Les associations n’ont jamais trop de moyens, chaque don fait une réelle différence pour les animaux.</p></div>";
       document.getElementById("rep5").setAttribute("hidden")
       document.getElementById("rep6").setAttribute("hidden")
   
     } else if (questionId === "question1" && reponseUtilisateur.includes("Vrai")){
-      document.getElementById("reponse1").innerHTML = "<div><img src='images/Icônes/Vrai.png' alt='Faux'><p style='background-color: #D1F9E7;   padding: 10px; border-radius: 5px;'>Correct ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux.    Seuls 15% servent aux frais de fonctionnement essentiels.</p></div>"
+      document.getElementById("reponse1").innerHTML = "<div><p style='background-color: #D1F9E7;   padding: 10px; border-radius: 5px;'><img src='images/Icônes/Vrai.png' alt='Faux'>Correct ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux.    Seuls 15% servent aux frais de fonctionnement essentiels.</p></div>"
       document.getElementById("rep1").setAttribute("hidden")
       document.getElementById("rep2").setAttribute("hidden")
   } else if (questionId === "question2" && reponseUtilisateur.includes("Vrai")){
-      document.getElementById("reponse2").innerHTML = "<div><img src='images/Icônes/Vrai.png' alt='Vrai'><p style='background-color: #D1F9E7; padding: 10px; border-radius: 5px;'>Correct ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !</p></div>";
+      document.getElementById("reponse2").innerHTML = "<div><p style='background-color: #D1F9E7; padding: 10px; border-radius: 5px;'><img src='images/Icônes/Vrai.png' alt='Vrai'>Correct ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !</p></div>";
       document.getElementById("rep3").setAttribute("hidden")
       document.getElementById("rep4").setAttribute("hidden")
   } else {
-      document.getElementById("reponse3").innerHTML = "<div><img src='images/Icônes/Faux.png' alt='Faux'><p style='background-color: #FFE3E2; padding: 10px; border-radius: 5px;'>Faux ! Les associations n’ont jamais trop de moyens, chaque don fait une réelle différence pour les animaux.</p></div>";
+      document.getElementById("reponse3").innerHTML = "<div><p style='background-color: #FFE3E2; padding: 10px; border-radius: 5px;'><img src='images/Icônes/Faux.png' alt='Faux'>Faux ! Les associations n’ont jamais trop de moyens, chaque don fait une réelle différence pour les animaux.</p></div>";
       document.getElementById("rep5").setAttribute("hidden")
       document.getElementById("rep6").setAttribute("hidden")
   }

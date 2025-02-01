@@ -15,11 +15,11 @@
         <nav>
             <a href="Accueil.html">Accueil</a>
             <a href="Contact.html">Contact</a>
-            <button type="button" id="btn"><img id="coeur" src="images/Icônes/coeur.png" alt="coeur">&nbsp;Faire un don</button>
+            <a href="#boxDons"><button type="button" id="btn"><img id="coeur" src="images/Icônes/coeur.png" alt="coeur">&nbsp;Faire un don</button></a>
     </header>
     <main>
         <section class="container">
-            <img id="hautDePage" src="images/haut de page.jpg" alt="Photos de chiens en train de courrir">
+            <img id="hautDePage" src="images/haut de page.jpg" alt="Photos de chiens en train de courir">
             <div class="text">
                 <h1>Protégeons-les Ensemble</h1>
                 <p>Chaque don compte pour leur offrir une vie meilleure</p>
@@ -29,19 +29,19 @@
             <br>
             <br>
         <section id="boxDons">
-            <div class="box" id="montant10" onclick="selectionner('montant','10')">
+            <div class="box bord" id="montant10" onclick="selectionner('montant','10')" tabindex="0">
                 <h2>10€</h2>
                 <br>
                 <p>permet de nourrir 5 animaux pendant une journée</p>
                 <br>
             </div>
-            <div class="box" id="montant20" onclick="selectionner('montant','20')">
+            <div class="box bord" id="montant20" onclick="selectionner('montant','20')" tabindex="0">
                 <h2>20€</h2>
                 <br>
                 <p>permet d'héberger un animal sauvage pendant une nuit</p>
                 <br>
             </div>
-            <div class="box" id="montant50" onclick="selectionner('montant','50')">
+            <div class="box bord" id="montant50" onclick="selectionner('montant','50')" tabindex="0">
                 <h2>50€</h2>
                 <br>
                 <p>permet de financer les soins vétérinaires complets pour un animal</p>
@@ -55,25 +55,43 @@
         </section>
         <br>
         <div class="btnDons" class="flex">
-            <button class="btn2"><img src="images/Icônes/coeur.png" alt="coeur"><p id="donBouton">&nbsp;Faire un don de 20€ par mois</p></button>
+            <button class="btn2" onclick="messageDon()"><img src="images/Icônes/coeur.png" alt="coeur"><p id="donBouton">&nbsp;Faire un don de 20€ par mois</p></button>
         </div>
         <br>
         <br>
-        <section id="mission" class="flex">
-            
-                <div id="photoMission">
-                    <img src="images/notre mission.jpg" alt="chiot courrant vers nous">
+        <section id="mission">
+            <div id="mission-container">
+                <div id="mission-golden">
+                    <img class="" src="images/notre mission.jpg" alt="chiot courant vers nous">
                 </div>
-                <div id="fondBlanc">
-                    <h2>Notre Mission</h2>
+                <div id="mission-texte">
+                    <h2 class="texteLeft">Notre Mission</h2>
                     <br>
                     <p>Depuis  2010, Quatre Pattes œuvre sans relâche pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en détresse et sensibiliser le public à la cause animale.
                         <br>
-                        <br>
+                        
                         Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de familles d’accueil et nos partenariats avec des refuges, nous leur offrons une seconde chance.
                         <br>
-                        <br>
+                        
                         Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres qui comptent sur nous.</p>
+                </div>
+            </div>
+            <div class="test flex4">
+                <div style="width: 50%;">
+                    <img class="img50" src="images/notre mission.jpg" alt="chiot courant vers nous">
+                </div>
+                    
+                <div id="fondBlanc" class="texteLeft">
+                    <h2 class="texteLeft">Notre Mission</h2>
+                    <br>
+                    <p>Depuis  2010, Quatre Pattes œuvre sans relâche pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en détresse et sensibiliser le public à la cause animale.
+                        <br>
+                        
+                        Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de familles d’accueil et nos partenariats avec des refuges, nous leur offrons une seconde chance.
+                        <br>
+                        
+                        Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres qui comptent sur nous.</p>
+                </div>
                 </div>
         </section>
         <br>
