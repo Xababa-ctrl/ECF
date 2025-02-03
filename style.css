@@ -344,5 +344,8 @@ label{
         align-items: center;
         width: 100%;
     }
+    #mission-container{
+        flex-direction: column;
+    }
     
 }
